@@ -29,7 +29,7 @@ const TextArea = () => {
 
 	return (
 		<main>
-			<Input initialvalue={text} changedText={changeText} />
+			<Input initialValue={text} changedText={changeText} />
 
 			<Output innerHtml={html} />
 		</main>

@@ -3,7 +3,7 @@ import "../css/output.css";
 const Output = ({ innerHtml }) => {
 	const setOutput = () => {
 		if (innerHtml) return { __html: innerHtml };
-		else return { __html: "<h4>Enter some text!</h4>" };
+		else return { __html: "<h2>Enter some text!</h2>" };
 	};
 
 	return (
