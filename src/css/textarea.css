@@ -10,3 +10,9 @@ main > div {
 	align-items: center;
 	margin: 0 0.5em;
 }
+
+@media screen and (max-width: 800px) {
+	main {
+		flex-direction: column;
+	}
+}

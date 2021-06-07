@@ -36,3 +36,42 @@
 	top: 5em;
 	right: 4em;
 }
+
+@media screen and (max-width: 800px) {
+	.input-area {
+		margin: 0 2em;
+	}
+
+	#input {
+		resize: vertical;
+		min-height: 70vh;
+	}
+
+	#copy-btn {
+		right: 2em;
+	}
+
+	#clear-btn {
+		right: 5.5em;
+	}
+}
+
+@media screen and (max-width: 430px) {
+	#copy-btn {
+		right: 1.5em;
+	}
+
+	#clear-btn {
+		right: 4em;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	#copy-btn {
+		right: 1.2em;
+	}
+
+	#clear-btn {
+		right: 3.7em;
+	}
+}

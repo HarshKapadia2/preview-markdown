@@ -94,3 +94,9 @@
 	background-color: #e1e4e8;
 	border: 1px solid #e1e4e8;
 }
+
+@media screen and (max-width: 800px) {
+	.output-area {
+		margin-top: 2em;
+	}
+}
