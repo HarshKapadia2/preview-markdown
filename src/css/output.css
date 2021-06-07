@@ -88,3 +88,9 @@
 #output blockquote > blockquote {
 	margin-top: 1em;
 }
+
+#output hr {
+	padding: 1px 0;
+	background-color: #e1e4e8;
+	border: 1px solid #e1e4e8;
+}
