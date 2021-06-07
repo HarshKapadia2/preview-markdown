@@ -1,4 +1,4 @@
-import "../css/editor.css";
+import "../css/output.css";
 
 const Output = ({ innerHtml }) => {
 	const setOutput = () => {
@@ -7,8 +7,8 @@ const Output = ({ innerHtml }) => {
 	};
 
 	return (
-		<div className="editor">
-			<h2 className="editor-title">Output</h2>
+		<div className="output-area">
+			<h2 className="output-area-title">Output</h2>
 
 			<div
 				id="output"

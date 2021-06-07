@@ -1,4 +1,4 @@
-import "../css/editor.css";
+import "../css/input.css";
 
 const Input = ({ initialvalue, changedText }) => {
 	const getChangedText = () => {
@@ -7,8 +7,8 @@ const Input = ({ initialvalue, changedText }) => {
 	};
 
 	return (
-		<div className="editor">
-			<h2 className="editor-title">Input</h2>
+		<div className="input-area">
+			<h2 className="input-area-title">Input</h2>
 
 			<textarea
 				title="Input"

@@ -22,16 +22,16 @@ _You **can** combine them_
 
 * Item 1
 * Item 2
-* Item 2a
-* Item 2b
+   * Item 2a
+   * Item 2b
 
 ### Ordered
 
 1. Item 1
 1. Item 2
 1. Item 3
-  1. Item 3a
-  1. Item 3b
+   1. Item 3a
+   1. Item 3b
 
 ## Images
 
@@ -49,11 +49,11 @@ You may be using [Markdown Live Preview](https://markdownlivepreview.com/).
 
 ## Tables
 
-| Left columns  | Right columns |
-| ------------- |:-------------:|
-| left foo      | right foo     |
-| left bar      | right bar     |
-| left baz      | right baz     |
+Left columns  | Right columns
+------------- | -------------
+left foo      | right foo    
+left bar      | right bar    
+left baz      | right baz    
 
 ## Blocks of code
 

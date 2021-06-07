@@ -1,0 +1,90 @@
+.output-area-title {
+	margin-bottom: 1em;
+}
+
+#output {
+	height: 100%;
+	width: 100%;
+	padding: 1em 1.5em;
+	border: 1px solid black;
+	border-radius: 6px;
+	background-color: white;
+}
+
+#output h1,
+#output h2 {
+	margin: 0.5em 0;
+	padding-bottom: 0.3em;
+	border-bottom: 1px solid #ebedef;
+}
+
+#output h3,
+#output h4,
+#output h5,
+#output h6 {
+	margin: 0.5em 0;
+}
+
+#output code {
+	background-color: #f3f4f4;
+	padding: 0.2em 0.3em;
+	border-radius: 6px;
+}
+
+#output pre {
+	background-color: #f6f8fa;
+	padding: 0.5em;
+	border-radius: 6px;
+	line-height: 1.5em;
+}
+
+#output pre code {
+	background-color: #f6f8fa;
+}
+
+#output li {
+	margin-top: 0.3em;
+}
+
+#output ol > li,
+#output ul > li {
+	margin-left: 1em;
+}
+
+#output table {
+	border-collapse: collapse;
+}
+
+#output tr:nth-child(2n) {
+	background-color: #f6f8fa;
+}
+
+#output th,
+#output td {
+	border: 1px solid #e0e3e6;
+	padding: 0.4em 0.8em;
+}
+
+#output a {
+	text-decoration: none;
+	color: #0366d6;
+}
+
+#output a code {
+	color: #58a6ff;
+}
+
+#output a:hover {
+	text-decoration: underline;
+	text-decoration-thickness: 1px;
+}
+
+#output blockquote {
+	color: #6a737d;
+	border-left: 5px solid #e0e3e6;
+	padding-left: 1em;
+}
+
+#output blockquote > blockquote {
+	margin-top: 1em;
+}

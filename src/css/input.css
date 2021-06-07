@@ -1,0 +1,12 @@
+.input-area-title {
+	margin-bottom: 1em;
+}
+
+#input {
+	height: 100%;
+	width: 100%;
+	padding: 1em 1.5em;
+	resize: none;
+	border: 1px solid black;
+	border-radius: 6px;
+}
