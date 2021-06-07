@@ -26,3 +26,17 @@ textarea {
 	border: 1px solid black;
 	border-radius: 4px;
 }
+
+#output code {
+	background-color: #212121;
+	color: #fafafa;
+	padding: 0.2em 0.3em;
+	border-radius: 4px;
+}
+
+#output pre {
+	background-color: #212121;
+	color: #fafafa;
+	padding: 0.5em;
+	border-radius: 4px;
+}
