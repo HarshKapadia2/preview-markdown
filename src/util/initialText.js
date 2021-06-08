@@ -9,6 +9,11 @@ const initialText = `<p align="center">
 - [GitHub's Markdown syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 - [Common Markdown mistakes](https://gist.github.com/DavidAnson/006a6c2a2d9d7b21b025)
 
+## Instructions
+
+- Start typing in the input box and Markdown will be rendered live in the output box!
+- **Copy all the Markdown** in the input box to the clipboard by clicking the rightmost button at the top right corner of the input box.
+- **Clear all the Markdown** in the input box by clicking the red 'X' (clear button) in the top right corner of the input box.
 
 ## Markdown Syntax
 
