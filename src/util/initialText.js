@@ -1,4 +1,8 @@
-const initialText = `# Preview Markdown
+const initialText = `<p align="center">
+   <img src="/preview-markdown/logo.svg" alt="Relative link to logo" width="30%" />
+   <br />
+   <h1 align="center">Preview Markdown</h1>
+</p>
 
 - [Markdown tutorial](https://www.youtube.com/watch?v=HUBNt18RFbo)
 - [General Markdown syntax](https://gist.github.com/safe1981/2019322)
