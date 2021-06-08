@@ -36,11 +36,13 @@
 	padding: 0.5em;
 	border-radius: 6px;
 	line-height: 1.5em;
-	white-space: normal;
+	white-space: pre-line;
+	word-break: break-all;
 }
 
 #output pre code {
 	background-color: #f6f8fa;
+	padding: 0;
 }
 
 #output li {
