@@ -58,7 +58,8 @@
 
 @media screen and (max-width: 800px) {
 	.input-area {
-		margin: 0 2em;
+		width: 90%;
+		margin: auto;
 	}
 
 	#input {
