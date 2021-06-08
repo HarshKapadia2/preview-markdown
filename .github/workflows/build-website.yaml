@@ -7,6 +7,7 @@ on:
             - ".github/workflows/**"
             - "public/**"
             - "src/**"
+            - ".env.production"
             - "package.json"
             - "package-lock.json"
     pull_request:
@@ -44,7 +45,7 @@ jobs:
                       rm -rf *
 
                       # Get latest source and buildscript
-                      git restore -s "${BRANCH_NAME}" public src .env package-lock.json package.json
+                      git restore -s "${BRANCH_NAME}" public src .env.production package-lock.json package.json
                   fi
 
             - name: Build site using Create React App
@@ -62,7 +63,7 @@ jobs:
                   sudo mv src preview-markdown
                   sudo mv package-lock.json ./preview-markdown
                   sudo mv package.json ./preview-markdown
-                  sudo mv .env ./preview-markdown
+                  sudo mv .env.production ./preview-markdown
                   cd preview-markdown
                   npm install
                   npm run build
