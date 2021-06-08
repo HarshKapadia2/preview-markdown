@@ -58,10 +58,10 @@ jobs:
                   cd preview-markdown
                   rm -rf public src package-lock.json package.json
                   cd ..
-                  mv public preview-markdown
-                  mv src preview-markdown
-                  mv package-lock.json /preview-markdown
-                  mv package.json /preview-markdown
+                  sudo mv public preview-markdown
+                  sudo mv src preview-markdown
+                  sudo mv package-lock.json /preview-markdown
+                  sudo mv package.json /preview-markdown
                   cd preview-markdown
                   npm install
                   npm run build
