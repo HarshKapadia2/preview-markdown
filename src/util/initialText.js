@@ -47,6 +47,10 @@ or
 1. Ordered list
 1. Ordered list
 
+- **Writing under the same list item**
+
+  Add two to three whitespaces below a list item to render a paragraph under the list item
+
 - **Unordered list nesting**
    - Unordered nested list item
    - Unordered nested list item
@@ -60,7 +64,7 @@ or
 1. **Ordered and unordered list nesting**
    - Unordered nested list item
       1. Ordered nested list item
-      1. Unordered nested list item
+      1. Ordered nested list item
    - Unordered nested list item
 
 > NOTE: Keep adding 3 whitespaces before hyphen for every level of nesting.
@@ -83,6 +87,8 @@ or
 ![Absolute link](https://user-images.githubusercontent.com/50140864/121142987-2ba86480-c85a-11eb-82bf-16621156b329.png)
 
 ![Relative link](/preview-markdown/logo.svg)
+
+<img src="/preview-markdown/logo.svg" alt="Relative link to logo" width="50%" />
 
 ---
 
@@ -149,6 +155,47 @@ foo | bar
 | bar
 foo
 bar | foo
+
+---
+
+### 11. Misc
+
+#### Horizontal Rule
+
+---
+or
+***
+or
+<hr />
+can be used.
+
+#### Line Break
+
+Text can rendered on a new line
+
+by adding an empty line in between.
+
+Lines can also be broken and images can be spaced<br />using the \`<br />\` tag.
+
+#### Bold And Italic Tags
+
+This text is <b>bold</b>, just like **this text**.
+
+This text is in <i>italics</i>, just like *this text*.
+
+#### Paragraph Tag
+
+The paragraph tag (\`<p></p>\`) can be used with the \`align\` attribute to align items to the center.
+
+Eg:
+
+<p align="center">
+   This text is center aligned!
+   <br />
+   **Markdown syntax** will <b>not</b> work within a 'p' tag.
+   <br />
+   <img src="/preview-markdown/logo.svg" alt="Relative link to logo" width="50%" />
+</p>
 
 ---
 
