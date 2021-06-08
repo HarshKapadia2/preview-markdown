@@ -1,69 +1,158 @@
-const initialText = `# Markdown syntax guide
+const initialText = `# Preview Markdown
 
-## Headers
+- [Markdown tutorial](https://www.youtube.com/watch?v=HUBNt18RFbo)
+- [General Markdown syntax](https://gist.github.com/safe1981/2019322)
+- [GitHub's Markdown syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+- [Common Markdown mistakes](https://gist.github.com/DavidAnson/006a6c2a2d9d7b21b025)
 
-# This is a Heading h1
-## This is a Heading h2 
-###### This is a Heading h6
 
-## Emphasis
+## Markdown Syntax
 
-*This text will be italic*  
-_This will also be italic_
+### 1. Headings
 
-**This text will be bold**  
-__This will also be bold__
+# Largest Heading
+## Second Largest Heading
+### Third Largest Heading
+###### Smallest Heading
 
-_You **can** combine them_
+---
 
-## Lists
+### 2. Styling Text
 
-### Unordered
+\`Inline code\`
 
-* Item 1
-* Item 2
-   * Item 2a
-   * Item 2b
+*Italic text* or _Italic text_
 
-### Ordered
+**Bold text** or __Bold text__
 
-1. Item 1
-1. Item 2
-1. Item 3
-   1. Item 3a
-   1. Item 3b
+_**Bold and italic text**_
 
-## Images
+or
 
-![This is a alt text.](/image/sample.png "This is a sample image.")
+***Bold and italic text***
 
-## Links
+**Bold with _italic nesting_**
 
-You may be using [Markdown Live Preview](https://markdownlivepreview.com/).
+~~Strikethrough text~~
 
-## Blockquotes
+> NOTE: Text is rendered on a new line only if there is an empty line in between.
 
-> Markdown is a lightweight markup language with plain-text-formatting syntax, created in 2004 by John Gruber with Aaron Swartz.
+---
+
+### 3. Lists
+
+- Unordered list
+* Unordered list
+
+1. Ordered list
+1. Ordered list
+
+- **Unordered list nesting**
+   - Unordered nested list item
+   - Unordered nested list item
+      - Unordered nested list item
+
+1. **Ordered list nesting**
+   1. Ordered nested list item
+   1. Ordered nested list item
+      1. Ordered nested list item
+
+1. **Ordered and unordered list nesting**
+   - Unordered nested list item
+      1. Ordered nested list item
+      1. Unordered nested list item
+   - Unordered nested list item
+
+> NOTE: Keep adding 3 whitespaces before hyphen for every level of nesting.
+
+---
+
+### 4. Hyperlinks
+
+- Contribute to [Preview Markdown](https://harshkapadia2.github.io/preview-markdown/) on [GitHub](https://github.com/HarshKapadia2/preview-markdown)!
+- Do [raise issues](https://github.com/HarshKapadia2/preview-markdown/issues) if any bugs are found.
+- [Relative link to the \`Images\` section below.](#5-images)
+- [Relative link to Preview Markdown's logo.](/preview-markdown/logo.svg)
+
+---
+
+### 5. Images
+
+![Alt text]()
+
+![Absolute link](https://user-images.githubusercontent.com/50140864/121142987-2ba86480-c85a-11eb-82bf-16621156b329.png)
+
+![Relative link](/preview-markdown/logo.svg)
+
+---
+
+### 6. Quoting Text
+
+In the words of [Selena Gomez](https://www.selenagomez.com/):
+
+> "Kindness always wins."
+
+Also,
+
+> Quoted text
 >
->> Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.
+>> Nested quote
 
-## Tables
+---
 
-Left columns  | Right columns
-------------- | -------------
-left foo      | right foo    
-left bar      | right bar    
-left baz      | right baz    
-
-## Blocks of code
+### 7. Quoting Code
 
 \`\`\`javascript
-let message = 'Hello world';
-alert(message);
+let message = "Thank you for using Preview Markdown!";
+console.log(message);
 \`\`\`
 
-## Inline code
+---
 
-This web site is using \`markedjs/marked\`.`;
+### 8. Task Lists
+
+- [x] Complete task
+   - [x] Complete task
+   - [x] Complete task
+- [ ] Incomplete task
+
+---
+
+### 9. Escaping Markdown Syntax
+
+*The asterisks should be rendered.*
+
+This is how it is done: \*The asterisks should be rendered.\*
+
+
+Characters that can be escaped with a backslash (\`\\\`) before them:
+- \\   backslash
+- \`   backtick
+- \\*   asterisk
+- \_   underscore
+- \{\}  curly braces
+- \[\]  square brackets
+- \(\)  parentheses
+- \\#   hash mark
+- \\+   plus sign
+- \\-   minus sign (hyphen)
+- \.   dot
+- \!   exclamation mark
+
+---
+
+### 10. Tables
+
+Table head | Table head
+---------- | ----------
+foo | bar
+| bar
+foo
+bar | foo
+
+---
+
+Enjoy writing Markdown! Thank you for using Preview Markdown!
+`;
 
 export default initialText;
