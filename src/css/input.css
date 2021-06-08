@@ -11,7 +11,7 @@
 	width: 100%;
 	padding: 1em 1.5em;
 	resize: none;
-	border: 1px solid black;
+	border: 2px solid black;
 	border-radius: 6px;
 }
 
@@ -35,6 +35,25 @@
 #clear-btn {
 	top: 5em;
 	right: 4em;
+}
+
+#input::-webkit-scrollbar {
+	background-color: #f1f1f1;
+	width: 0.8em;
+}
+
+#input::-webkit-scrollbar-track {
+	background-color: #f1f1f1;
+}
+
+#input::-webkit-scrollbar-thumb {
+	background-color: #bdbdbd;
+	border-radius: 6px;
+}
+
+#input::-webkit-scrollbar-corner {
+	background-color: #e0e0e0;
+	border-radius: 1.5px;
 }
 
 @media screen and (max-width: 800px) {

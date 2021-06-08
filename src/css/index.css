@@ -23,3 +23,16 @@ body {
 		#35eb93 100%
 	);
 }
+
+body::-webkit-scrollbar {
+	width: 0.7em;
+}
+
+body::-webkit-scrollbar-track {
+	background-color: #e0e0e0;
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: #a8a8a8;
+	border-radius: 2px;
+}
