@@ -198,12 +198,14 @@ Eg:
    <br />
    **Markdown syntax** will <b>not</b> work within a 'p' tag.
    <br />
-   <img src="/preview-markdown/logo.svg" alt="Relative link to logo" width="10%" />
+   <img src="/preview-markdown/logo.svg" alt="Relative link to logo" width="20%" />
 </p>
 
 ---
 
-Enjoy writing Markdown! Thank you for using Preview Markdown!
+<p align="center">
+   Thank you for using Preview Markdown!
+</p>
 `;
 
 export default initialText;
