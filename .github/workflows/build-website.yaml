@@ -48,10 +48,9 @@ jobs:
             - name: Build site using Create React App
               run: |
                   # Build page
-                  sudo apt update
-                  sudo apt install nodejs
-                  sudo apt install npm
-                  sudo apt install npx
+                  sudo apt-get update
+                  sudo apt-get install nodejs
+                  sudo apt-get install npm
                   npx create-react-app preview-markdown
                   cp -Tv public/ preview-markdown/public
                   cp -Tv src/ preview-markdown/src
