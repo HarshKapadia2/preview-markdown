@@ -13,10 +13,6 @@ on:
             - "main"
     workflow_dispatch:
 
-defaults:
-    run:
-        working-directory: /documents
-
 jobs:
     build-website:
         runs-on: ubuntu-latest
