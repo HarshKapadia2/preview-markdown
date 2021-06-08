@@ -88,7 +88,7 @@ or
 
 ![Relative link](/preview-markdown/logo.svg)
 
-<img src="/preview-markdown/logo.svg" alt="Relative link to logo" width="50%" />
+<img src="/preview-markdown/logo.svg" alt="Relative link to logo" width="10%" />
 
 ---
 
@@ -194,7 +194,7 @@ Eg:
    <br />
    **Markdown syntax** will <b>not</b> work within a 'p' tag.
    <br />
-   <img src="/preview-markdown/logo.svg" alt="Relative link to logo" width="50%" />
+   <img src="/preview-markdown/logo.svg" alt="Relative link to logo" width="10%" />
 </p>
 
 ---

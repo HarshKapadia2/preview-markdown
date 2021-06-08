@@ -44,7 +44,7 @@ jobs:
                       rm -rf *
 
                       # Get latest source and buildscript
-                      git restore -s "${BRANCH_NAME}" public src package.json package-lock.json
+                      git restore -s "${BRANCH_NAME}" public src package-lock.json package.json
                   fi
 
             - name: Build site using Create React App
@@ -55,11 +55,13 @@ jobs:
                   sudo apt-get update
                   sudo apt-get install nodejs npm
                   npx create-react-app preview-markdown
-                  cp -Trv public/ preview-markdown/public
-                  cp -Trv src/ preview-markdown/src
-                  cp -Trv package.json preview-markdown/package.json
-                  cp -Trv package-lock.json preview-markdown/package-lock.json
-                  rm -rf public src package.json package-lock.json
+                  cd preview-markdown
+                  rm -rf public src package-lock.json package.json
+                  cd ..
+                  mv public preview-markdown
+                  mv src preview-markdown
+                  mv package-lock.json /preview-markdown
+                  mv package.json /preview-markdown
                   cd preview-markdown
                   npm install
                   npm run build
