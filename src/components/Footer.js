@@ -13,7 +13,7 @@ const Footer = () => {
 			</a>
 			&nbsp;|&nbsp;
 			<a
-				href="https://github.com/HarshKapadia2/preview-mkdwn"
+				href="https://github.com/HarshKapadia2/preview-markdown"
 				target="_blank"
 				rel="noreferrer"
 			>
