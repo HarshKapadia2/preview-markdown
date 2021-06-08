@@ -50,13 +50,12 @@ jobs:
               run: |
                   # Build page
                   sudo apt-get update
-                  sudo apt-get install nodejs
-                  sudo apt-get install npm
+                  sudo apt-get install nodejs npm
                   npx create-react-app preview-markdown
-                  cp -Tv public/ preview-markdown/public
-                  cp -Tv src/ preview-markdown/src
-                  cp -Tv package.json preview-markdown/package.json
-                  cp -Tv package-lock.json preview-markdown/package-lock.json
+                  cp -Trv public/ preview-markdown/public
+                  cp -Trv src/ preview-markdown/src
+                  cp -Trv package.json preview-markdown/package.json
+                  cp -Trv package-lock.json preview-markdown/package-lock.json
                   rm -rf public src package.json package-lock.json
                   cd preview-markdown
                   npm install
