@@ -36,6 +36,7 @@
 	padding: 0.5em;
 	border-radius: 6px;
 	line-height: 1.5em;
+	white-space: normal;
 }
 
 #output pre code {
@@ -91,6 +92,10 @@
 	border: 1px solid #e1e4e8;
 	margin: 1.5em 0;
 	background-color: #e1e4e8;
+}
+
+#output img {
+	max-width: 100%;
 }
 
 @media screen and (max-width: 800px) {
