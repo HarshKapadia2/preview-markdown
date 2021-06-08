@@ -47,11 +47,9 @@ jobs:
                       git restore -s "${BRANCH_NAME}" public src package.json package-lock.json
                   fi
 
-            - name: Set GitHub environment options
+            - name: Build site using Create React App
               env:
                   CI: false # To prevent taking warnings as errors
-
-            - name: Build site using Create React App
               run: |
                   # Build page
                   sudo apt-get update
