@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import marked from "marked";
+import DOMPurify from "dompurify";
 import Input from "./Input";
 import Output from "./Output";
 import "../css/textarea.css";
@@ -20,7 +21,10 @@ const TextArea = () => {
 	const [html, setHtml] = useState();
 
 	useEffect(() => {
-		setHtml(marked(text));
+		const rawHtml = marked(text);
+		const sanitizedHtml = DOMPurify.sanitize(rawHtml);
+
+		setHtml(sanitizedHtml);
 	}, [text]);
 
 	const changeText = (changedText) => {
