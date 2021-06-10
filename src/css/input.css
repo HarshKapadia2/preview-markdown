@@ -57,6 +57,12 @@
 	border-radius: 1.5px;
 }
 
+@media screen and (max-width: 1024px) {
+	.input-area {
+		margin: 0 0.5em 0 1em;
+	}
+}
+
 @media screen and (max-width: 800px) {
 	.input-area {
 		width: 90%;

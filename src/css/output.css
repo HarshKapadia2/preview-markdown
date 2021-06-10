@@ -113,6 +113,12 @@
 	margin: 1em 0;
 }
 
+@media screen and (max-width: 1024px) {
+	.output-area {
+		margin: 0 1em 0 0.5em;
+	}
+}
+
 @media screen and (max-width: 800px) {
 	.output-area {
 		margin: 2em auto;
