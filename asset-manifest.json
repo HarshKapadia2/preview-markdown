@@ -1,19 +1,21 @@
 {
   "files": {
-    "main.css": "/preview-markdown/static/css/main.90ec5d07.chunk.css",
-    "main.js": "/preview-markdown/static/js/main.57d30396.chunk.js",
+    "main.css": "/preview-markdown/static/css/main.eefe6463.chunk.css",
+    "main.js": "/preview-markdown/static/js/main.3246b108.chunk.js",
     "runtime-main.js": "/preview-markdown/static/js/runtime-main.5ded79ab.js",
-    "static/js/2.2a7c4c08.chunk.js": "/preview-markdown/static/js/2.2a7c4c08.chunk.js",
+    "static/js/2.47824a68.chunk.js": "/preview-markdown/static/js/2.47824a68.chunk.js",
     "index.html": "/preview-markdown/index.html",
-    "static/js/2.2a7c4c08.chunk.js.LICENSE.txt": "/preview-markdown/static/js/2.2a7c4c08.chunk.js.LICENSE.txt",
+    "static/js/2.47824a68.chunk.js.LICENSE.txt": "/preview-markdown/static/js/2.47824a68.chunk.js.LICENSE.txt",
     "static/media/index.css": "/preview-markdown/static/media/Segoe UI.293e692f.woff",
-    "static/media/clear.597a8daa.svg": "/preview-markdown/static/media/clear.597a8daa.svg",
-    "static/media/copy.835b9534.svg": "/preview-markdown/static/media/copy.835b9534.svg"
+    "static/media/copy.835b9534.svg": "/preview-markdown/static/media/copy.835b9534.svg",
+    "static/media/cross.597a8daa.svg": "/preview-markdown/static/media/cross.597a8daa.svg",
+    "static/media/moon.ed272c07.svg": "/preview-markdown/static/media/moon.ed272c07.svg",
+    "static/media/sun.473f1754.svg": "/preview-markdown/static/media/sun.473f1754.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.5ded79ab.js",
-    "static/js/2.2a7c4c08.chunk.js",
-    "static/css/main.90ec5d07.chunk.css",
-    "static/js/main.57d30396.chunk.js"
+    "static/js/2.47824a68.chunk.js",
+    "static/css/main.eefe6463.chunk.css",
+    "static/js/main.3246b108.chunk.js"
   ]
 }
