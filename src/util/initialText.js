@@ -206,6 +206,15 @@ Eg:
    <img src="/preview-markdown/logo.svg" alt="Relative link to logo" width="20%" />
 </p>
 
+#### Collapsible section
+
+<details>
+   <summary>Click to toggle collapse</summary>
+
+   - Hi!
+   - Usual **Markdown** works in \`here\`.
+</details>
+
 ---
 
 <p align="center">
