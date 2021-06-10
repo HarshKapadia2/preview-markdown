@@ -15,6 +15,26 @@
 	background-color: white;
 }
 
+#theme-btn {
+	top: 5em;
+	right: 1em;
+}
+
+@media screen and (max-width: 1024px) {
+	.output-area {
+		margin: 0 1em 0 0.5em;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.output-area {
+		margin: 2em auto;
+		width: 95%;
+	}
+}
+
+/* ========================================== LIGHT THEME ==================================================== */
+
 #output h1,
 #output h2 {
 	margin: 0.5em 0;
@@ -113,15 +133,53 @@
 	margin: 1em 0;
 }
 
-@media screen and (max-width: 1024px) {
-	.output-area {
-		margin: 0 1em 0 0.5em;
-	}
+/* ============================================= DARK THEME ====================================================== */
+
+#output.dark {
+	background-color: #0d1117;
+	color: #c9d1d9;
 }
 
-@media screen and (max-width: 800px) {
-	.output-area {
-		margin: 2em auto;
-		width: 95%;
-	}
+#output.dark h1,
+#output.dark h2 {
+	border-color: #21262d;
+}
+
+#output.dark code {
+	background-color: #2f333a;
+}
+
+#output.dark pre {
+	background-color: #161b22;
+}
+
+#output.dark pre code {
+	background-color: #161b22;
+}
+
+#output.dark tr:nth-child(2n) {
+	background-color: #161b22;
+}
+
+#output.dark th,
+#output.dark td {
+	border-color: #3a424a;
+}
+
+#output.dark a {
+	color: #58a6ff;
+}
+
+#output.dark a code {
+	color: #58a6ff;
+}
+
+#output.dark blockquote {
+	color: #8b949e;
+	border-color: #3a424a;
+}
+
+#output.dark hr {
+	border-color: #30363d;
+	background-color: #30363d;
 }

@@ -1,5 +1,4 @@
 .input-area {
-	position: relative;
 	margin: 0 1em 0 2em;
 }
 
@@ -14,18 +13,6 @@
 	resize: none;
 	border: 2px solid black;
 	border-radius: 6px;
-}
-
-.action-btn {
-	position: absolute;
-	background-color: transparent;
-	border: transparent;
-	cursor: pointer;
-}
-
-.action-btn img {
-	display: grid;
-	place-content: center;
 }
 
 #copy-btn {

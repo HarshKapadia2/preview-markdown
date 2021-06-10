@@ -125,3 +125,41 @@ code.hljs {
 .hljs-meta-keyword {
 	font-weight: 700;
 }
+
+/* ============================================= DARK MODE ==================================================== */
+
+#output.dark .hljs-comment {
+	color: #969896;
+}
+#output.dark .hljs-tag {
+	color: #e8e8e8;
+}
+
+#output.dark .hljs-name {
+	color: #ed6a43;
+}
+
+#output.dark .hljs-addition,
+#output.dark .hljs-built_in,
+#output.dark .hljs-code,
+#output.dark .hljs-doctag,
+#output.dark .hljs-keyword.hljs-atrule,
+#output.dark .hljs-quote,
+#output.dark .hljs-regexp,
+#output.dark .hljs-string,
+#output.dark .hljs-title.class_.inherited__ {
+	color: #a5d6ff;
+}
+#output.dark .hljs-attribute,
+#output.dark .hljs-function .hljs-title,
+#output.dark .hljs-section,
+#output.dark .hljs-title.function_,
+#output.dark .ruby .hljs-property {
+	color: #d2a8ff;
+}
+#output.dark .diff .hljs-meta,
+#output.dark .hljs-keyword,
+#output.dark .hljs-template-tag,
+#output.dark .hljs-type {
+	color: #ff7b72;
+}
