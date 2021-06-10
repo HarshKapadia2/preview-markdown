@@ -13,13 +13,14 @@
 </p>
 
 ## Tech stack
-  - React.js (Started with 'Create React App' and written in JavaScript.)
-  - CSS (vanilla)
+
+-   React.js (Started with 'Create React App' and written in JavaScript.)
+-   CSS (vanilla)
 
 ## Contributions
 
-- All contributions are most welcome!
-- View the [`CONTRIBUTING.md`](CONTRIBUTING.md) file for further instructions.
+-   All contributions are most welcome!
+-   View the [`CONTRIBUTING.md`](CONTRIBUTING.md) file for further instructions.
 
 ## Code of Conduct
 
