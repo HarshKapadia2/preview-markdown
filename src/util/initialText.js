@@ -14,6 +14,7 @@ const initialText = `<p align="center">
 - Start typing in the input box and Markdown will be rendered live in the output box!
 - **Copy all the Markdown** in the input box to the clipboard by clicking the rightmost button at the top right corner of the input box.
 - **Clear all the Markdown** in the input box by clicking the red 'X' (clear button) in the top right corner of the input box.
+- **Toggle dark mode** in the output box by clicking the button in the top right corner of the output box.
 
 ## Markdown Syntax
 
