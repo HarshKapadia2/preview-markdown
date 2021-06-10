@@ -1,6 +1,6 @@
 import "../css/input.css";
 import copy from "../img/copy.svg";
-import clear from "../img/clear.svg";
+import cross from "../img/cross.svg";
 
 const Input = ({ initialValue, changedText }) => {
 	const textChangeAction = () => {
@@ -53,7 +53,7 @@ const Input = ({ initialValue, changedText }) => {
 				title="Clear text"
 				onClick={clearText}
 			>
-				<img src={clear} alt="Clear text" />
+				<img src={cross} alt="Clear text" />
 			</button>
 
 			<button
