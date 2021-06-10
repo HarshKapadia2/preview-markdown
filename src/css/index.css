@@ -22,6 +22,7 @@ body {
 		#2cacd1 65%,
 		#35eb93 100%
 	);
+	overflow-wrap: break-word;
 }
 
 body::-webkit-scrollbar {
