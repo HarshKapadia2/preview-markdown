@@ -61,8 +61,7 @@
 	margin: 1.5em 0;
 	border-radius: 6px;
 	line-height: 1.5em;
-	white-space: pre-line;
-	word-break: break-all;
+	overflow-x: auto;
 }
 
 #output pre code {
@@ -81,6 +80,8 @@
 
 #output table {
 	border-collapse: collapse;
+	display: block;
+	overflow-x: auto;
 }
 
 #output tr:nth-child(2n) {
@@ -179,3 +180,22 @@
 	border-color: #30363d;
 	background-color: #30363d;
 }
+
+/* ================================================ SCROLL BAR (for 'pre' and 'table') =================================================== */
+
+/* #output table::-webkit-scrollbar-track, #output pre::-webkit-scrollbar-track {
+	background-color: #f1f1f1;
+}
+
+#output table::-webkit-scrollbar-thumb, #output pre::-webkit-scrollbar-thumb {
+	background-color: #a8a8a8;
+	border-radius: 2px;
+}
+
+#output.dark table::-webkit-scrollbar-track, #output.dark pre::-webkit-scrollbar-track {
+	background-color: #424242;
+}
+
+#output.dark table::-webkit-scrollbar-thumb, #output.dark pre::-webkit-scrollbar-thumb {
+	background-color: #7b7b7b;
+} */

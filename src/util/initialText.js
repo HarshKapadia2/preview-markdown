@@ -158,7 +158,7 @@ Characters that can be escaped with a backslash (\`\\\`) before them:
 
 ### 10. Tables
 
-Table head | Table head | Table head
+Table Head | Table Head | Table Head
 ---------- | ---------- | ----------
 foo | bar | baz
 | bar | baz
