@@ -1,8 +1,10 @@
 import "../css/input.css";
 import copy from "../img/copy.svg";
 import cross from "../img/cross.svg";
+import moon from "../img/moon.svg";
+import sun from "../img/sun.svg";
 
-const Input = ({ initialValue, changedText }) => {
+const Input = ({ initialValue, changedText, changeTheme, themeVal }) => {
 	const textChangeAction = () => {
 		const clearBtn = document.querySelector("#clear-btn");
 		const copyBtn = document.querySelector("#copy-btn");
@@ -42,6 +44,7 @@ const Input = ({ initialValue, changedText }) => {
 			<textarea
 				title="Input"
 				id="input"
+				className={themeVal === "light" ? "" : "dark"}
 				defaultValue={initialValue}
 				onChange={textChangeAction}
 				placeholder="## Enter some text!"
@@ -63,6 +66,18 @@ const Input = ({ initialValue, changedText }) => {
 				onClick={copyText}
 			>
 				<img src={copy} alt="Copy text" />
+			</button>
+
+			<button
+				id="theme-btn"
+				className="action-btn"
+				title="Change theme"
+				onClick={changeTheme}
+			>
+				<img
+					src={themeVal === "light" ? moon : sun}
+					alt="Change theme"
+				/>
 			</button>
 		</div>
 	);

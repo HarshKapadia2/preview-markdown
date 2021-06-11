@@ -16,11 +16,6 @@
 	background-color: white;
 }
 
-#theme-btn {
-	top: 2.9em;
-	right: 1em;
-}
-
 @media screen and (max-width: 1024px) {
 	.output-area {
 		margin: 0 1em 0 0.5em;

@@ -1,20 +1,19 @@
 const initialText = `<p align="center">
-   <img src="/preview-markdown/logo.svg" alt="Relative link to logo" width="30%" />
-   <br />
-   <h1 align="center">Preview Markdown</h1>
+<img src="/preview-markdown/logo.svg" alt="Relative link to logo" width="30%" />
+<br />
+<h1 align="center">Preview Markdown</h1>
 </p>
 
-- [Markdown tutorial](https://www.youtube.com/watch?v=HUBNt18RFbo)
-- [General Markdown syntax](https://gist.github.com/safe1981/2019322)
-- [GitHub's Markdown syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
-- [Common Markdown mistakes](https://gist.github.com/DavidAnson/006a6c2a2d9d7b21b025)
+Markdown is a lightweight markup language that can be used to add formatting to plaintext documents.
 
 ## Instructions
 
 - Start typing in the input box and Markdown will be rendered live in the output box!
-- **Copy all the Markdown** in the input box to the clipboard by clicking the rightmost button at the top of the input box.
-- **Clear all the Markdown** in the input box by clicking the red 'X' (clear button) at the top of the input box.
-- **Toggle dark mode** in the output box by clicking the moon/sun button at the top of the output box.
+- Buttons on top of the input box in order
+   - Red cross ('X'): **Copy all the Markdown** in the input box.
+   - Clipboard: **Clear all the Markdown**.
+   - Sun/moon: **Toggle the dark theme**.
+- This project is open source. Feel free to [contribute](https://github.com/HarshKapadia2/preview-markdown) or [raise an issue](https://github.com/HarshKapadia2/preview-markdown/issues).
 
 ## Markdown Syntax
 
@@ -59,23 +58,23 @@ or
 
 - **Writing under the same list item**
 
-  Add two to three whitespaces below a list item to render a paragraph under the list item
+Add two to three whitespaces below a list item to render a paragraph under the list item
 
 - **Unordered list nesting**
+- Unordered nested list item
+- Unordered nested list item
    - Unordered nested list item
-   - Unordered nested list item
-      - Unordered nested list item
 
 1. **Ordered list nesting**
+1. Ordered nested list item
+1. Ordered nested list item
    1. Ordered nested list item
-   1. Ordered nested list item
-      1. Ordered nested list item
 
 1. **Ordered and unordered list nesting**
-   - Unordered nested list item
-      1. Ordered nested list item
-      1. Ordered nested list item
-   - Unordered nested list item
+- Unordered nested list item
+   1. Ordered nested list item
+   1. Ordered nested list item
+- Unordered nested list item
 
 > NOTE: Keep adding 3 whitespaces before hyphen for every level of nesting.
 
@@ -128,8 +127,8 @@ console.log(message);
 ### 8. Task Lists
 
 - [x] Complete task
-   - [x] Complete task
-   - [x] Complete task
+- [x] Complete task
+- [x] Complete task
 - [ ] Incomplete task
 
 ---
@@ -138,33 +137,44 @@ console.log(message);
 
 *The asterisks should be rendered.*
 
-This is how it is done: \*The asterisks should be rendered.\*
+This is how it is done: *The asterisks should be rendered.*
 
 
 Characters that can be escaped with a backslash (\`\\\`) before them:
 - \\   backslash
 - \`   backtick
 - \\*   asterisk
-- \_   underscore
-- \{\}  curly braces
-- \[\]  square brackets
-- \(\)  parentheses
+- _   underscore
+- {}  curly braces
+- []  square brackets
+- ()  parentheses
 - \\#   hash mark
 - \\+   plus sign
 - \\-   minus sign (hyphen)
-- \.   dot
-- \!   exclamation mark
+- .   dot
+- !   exclamation mark
 
 ---
 
 ### 10. Tables
 
-Table head | Table head
----------- | ----------
+Table head | Table head | Table head
+---------- | ---------- | ----------
+foo | bar | baz
+| bar | baz
+foo | | baz
 foo | bar
-| bar
 foo
-bar | foo
+
+#### Table Alignment
+
+Left Aligned | Center Aligned | Right Aligned
+:----------- | :------------: | ------------:
+foo | bar | baz
+| bar | baz
+foo | | baz
+foo | bar
+foo
 
 ---
 
@@ -200,26 +210,34 @@ The paragraph tag (\`<p></p>\`) can be used with the \`align\` attribute to alig
 Eg:
 
 <p align="center">
-   This text is center aligned!
-   <br />
-   **Markdown syntax** will <b>not</b> work within a 'p' tag.
-   <br />
-   <img src="/preview-markdown/logo.svg" alt="Relative link to logo" width="20%" />
+This text is center aligned!
+<br />
+**Markdown syntax** will <b>not</b> work within a 'p' tag.
+<br />
+<img src="/preview-markdown/logo.svg" alt="Relative link to logo" width="20%" />
 </p>
 
 #### Collapsible Section
 
 <details>
-   <summary>Click to toggle collapse</summary>
+<summary>Click to toggle collapse</summary>
 
-   - Hi!
-   - Usual **Markdown** works in \`here\`.
+- Hi!
+- Usual **Markdown** works in \`here\`.
 </details>
+
+## Resources
+
+- [What is Markdown?](https://www.markdownguide.org/getting-started)
+- [Markdown tutorial](https://www.youtube.com/watch?v=HUBNt18RFbo)
+- [Basic Markdown syntax](https://www.markdownguide.org/basic-syntax/)
+- [Extended Markdown syntax](https://www.markdownguide.org/extended-syntax/)
+- [Common Markdown mistakes](https://gist.github.com/DavidAnson/006a6c2a2d9d7b21b025)
 
 ---
 
 <p align="center">
-   Thank you for using Preview Markdown!
+Thank you for using Preview Markdown!
 </p>
 `;
 

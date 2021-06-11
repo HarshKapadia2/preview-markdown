@@ -19,6 +19,7 @@ marked.setOptions({
 const TextArea = () => {
 	const [text, setText] = useState(initialText);
 	const [html, setHtml] = useState();
+	const [theme, setTheme] = useState("light");
 
 	useEffect(() => {
 		const rawHtml = marked(text);
@@ -31,11 +32,21 @@ const TextArea = () => {
 		setText(changedText);
 	};
 
+	const changeTheme = () => {
+		if (theme === "light") setTheme("dark");
+		else setTheme("light");
+	};
+
 	return (
 		<main>
-			<Input initialValue={text} changedText={changeText} />
+			<Input
+				initialValue={text}
+				changedText={changeText}
+				changeTheme={changeTheme}
+				themeVal={theme}
+			/>
 
-			<Output innerHtml={html} />
+			<Output innerHtml={html} themeVal={theme} />
 		</main>
 	);
 };
