@@ -3,7 +3,7 @@
 }
 
 .output-area-title {
-	margin-bottom: 1em;
+	margin: 0 0.2em 1.5em 0.2em;
 }
 
 #output {
@@ -12,11 +12,12 @@
 	padding: 1em 1.5em;
 	border: 2px solid black;
 	border-radius: 6px;
+	color: #24292e;
 	background-color: white;
 }
 
 #theme-btn {
-	top: 5em;
+	top: 2.9em;
 	right: 1em;
 }
 

@@ -3,7 +3,7 @@
 }
 
 .input-area-title {
-	margin-bottom: 1em;
+	margin: 0 0.2em 1.5em 0.2em;
 }
 
 #input {
@@ -16,12 +16,12 @@
 }
 
 #copy-btn {
-	top: 5em;
+	top: 2.9em;
 	right: 1em;
 }
 
 #clear-btn {
-	top: 5em;
+	top: 2.9em;
 	right: 4em;
 }
 
@@ -59,33 +59,5 @@
 	#input {
 		resize: vertical;
 		min-height: 70vh;
-	}
-
-	#copy-btn {
-		right: 2em;
-	}
-
-	#clear-btn {
-		right: 5.5em;
-	}
-}
-
-@media screen and (max-width: 430px) {
-	#copy-btn {
-		right: 1.5em;
-	}
-
-	#clear-btn {
-		right: 4em;
-	}
-}
-
-@media screen and (max-width: 360px) {
-	#copy-btn {
-		right: 1.2em;
-	}
-
-	#clear-btn {
-		right: 3.7em;
 	}
 }
