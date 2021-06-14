@@ -61,7 +61,7 @@ jobs:
               run: |
                   # Build page
                   sudo apt-get update
-                  sudo apt-get install nodejs=16.2.0 npm=7.13.0
+                  sudo apt-get install nodejs npm
                   mkdir preview-markdown
                   mv public ./preview-markdown
                   mv src ./preview-markdown
