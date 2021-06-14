@@ -13,6 +13,13 @@ on:
     pull_request:
         branches:
             - "main"
+        paths:
+            - ".github/workflows/**"
+            - "public/**"
+            - "src/**"
+            - ".env.production"
+            - "package.json"
+            - "package-lock.json"
     workflow_dispatch:
 
 jobs:
@@ -48,22 +55,19 @@ jobs:
                       git restore -s "${BRANCH_NAME}" public src .env.production package-lock.json package.json
                   fi
 
-            - name: Build site using Create React App
+            - name: Build web app
               env:
                   CI: false # To prevent taking warnings as errors
               run: |
                   # Build page
                   sudo apt-get update
-                  sudo apt-get install nodejs npm
-                  npx create-react-app preview-markdown
-                  cd preview-markdown
-                  rm -rf public src package-lock.json package.json
-                  cd ..
-                  sudo mv public preview-markdown
-                  sudo mv src preview-markdown
-                  sudo mv package-lock.json ./preview-markdown
-                  sudo mv package.json ./preview-markdown
-                  sudo mv .env.production ./preview-markdown
+                  sudo apt-get install nodejs=16.2.0 npm=7.13.0
+                  mkdir preview-markdown
+                  mv public ./preview-markdown
+                  mv src ./preview-markdown
+                  mv package-lock.json ./preview-markdown
+                  mv package.json ./preview-markdown
+                  mv .env.production ./preview-markdown
                   cd preview-markdown
                   npm install
                   npm run build
