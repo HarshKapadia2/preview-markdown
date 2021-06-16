@@ -10,8 +10,8 @@ Markdown is a lightweight markup language that can be used to add formatting to 
 
 - Start typing in the input box and Markdown will be rendered live in the output box!
 - Buttons on top of the input box in order
-   - Red cross ('X'): **Copy all the Markdown** in the input box.
-   - Clipboard: **Clear all the Markdown**.
+   - Red cross ('X'): **Clear all the Markdown**.
+   - Clipboard: **Copy all the Markdown** in the input box.
    - Sun/moon: **Toggle the dark theme**.
 - This project is open source. Feel free to [contribute](https://github.com/HarshKapadia2/preview-markdown) or [raise an issue](https://github.com/HarshKapadia2/preview-markdown/issues).
 
