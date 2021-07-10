@@ -30,6 +30,20 @@ const Input = ({ initialValue, changedText, changeTheme, themeVal }) => {
 		document.execCommand("copy");
 	};
 
+	const copyPopUp = () => {
+		const popUpNotification = document.getElementById("popup-notification");
+		popUpNotification.style.display = "block";
+
+		setTimeout(function () {
+			popUpNotification.style.display = "none";
+		}, 2000);
+	};
+
+	const copyActions = () => {
+		copyText();
+		copyPopUp();
+	};
+
 	const clearText = () => {
 		const textArea = document.querySelector("#input");
 
@@ -59,11 +73,18 @@ const Input = ({ initialValue, changedText, changeTheme, themeVal }) => {
 				<img src={cross} alt="Clear text" />
 			</button>
 
+			<div
+				id="popup-notification"
+				className="popup-window popup-div rounded"
+			>
+				<small>Copied!</small>
+			</div>
+
 			<button
 				id="copy-btn"
 				className="action-btn"
 				title="Copy text"
-				onClick={copyText}
+				onClick={copyActions}
 			>
 				<img src={copy} alt="Copy text" />
 			</button>

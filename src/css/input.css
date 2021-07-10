@@ -30,6 +30,42 @@
 	right: 4em;
 }
 
+#popup-notification {
+	top: .2em;
+	right: 1.4em;
+	display: none;
+}
+
+.popup-div {
+	background: #0d1117;
+	color: #fff;
+	display: inline-block;
+	font-size: 14px;
+	line-height: 2em;
+	margin-bottom: 1em;
+	padding: 0 1em;
+	text-align: center;
+	vertical-align: top;
+	min-width: 7em;
+	max-height: 2.5em;
+}
+
+.popup-div:after {
+	border: 1em solid transparent;
+	border-top-color: #0d1117;
+	content: '';
+	margin-left: -1em;
+	position: absolute;
+	top: 75%;
+	left: 50%;
+	width: 0;
+	height: 0;
+}
+
+.popup-div.rounded {
+	border-radius: .4em;
+}
+
 #theme-btn {
 	top: 2.9em;
 	right: 1em;
@@ -46,7 +82,6 @@
 		width: 90%;
 		margin: auto;
 	}
-
 	#input {
 		resize: vertical;
 		min-height: 70vh;
