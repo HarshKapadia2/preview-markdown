@@ -3,7 +3,7 @@ main {
 	display: flex;
 }
 
-main>div {
+main > div {
 	width: 50vw;
 	display: flex;
 	flex-direction: column;
@@ -32,7 +32,7 @@ main>div {
 	main {
 		flex-direction: column;
 	}
-	main>div {
+	main > div {
 		width: 100vw;
 	}
 }
