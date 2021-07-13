@@ -25,6 +25,7 @@ const TextArea = () => {
 	useEffect(() => {
 		const rawHtml = marked(text);
 		const sanitizedHtml = DOMPurify.sanitize(rawHtml);
+
 		setHtml(sanitizedHtml);
 	}, [text]);
 
