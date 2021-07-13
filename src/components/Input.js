@@ -4,7 +4,7 @@ import cross from "../img/cross.svg";
 import moon from "../img/moon.svg";
 import sun from "../img/sun.svg";
 
-const Input = ({ initialValue, changedText, changeTheme, themeVal }) => {
+const Input = ({ initialValue, changedText, changeTheme, themeVal, copyRef }) => {
 	const textChangeAction = () => {
 		const clearBtn = document.querySelector("#clear-btn");
 		const copyBtn = document.querySelector("#copy-btn");
@@ -31,11 +31,10 @@ const Input = ({ initialValue, changedText, changeTheme, themeVal }) => {
 	};
 
 	const copyPopUp = () => {
-		const popUpNotification = document.getElementById("popup-notification");
-		popUpNotification.style.display = "block";
+		copyRef.current.style.display = "block";
 
 		setTimeout(function () {
-			popUpNotification.style.display = "none";
+			copyRef.current.style.display = "none";
 		}, 2000);
 	};
 
@@ -74,6 +73,7 @@ const Input = ({ initialValue, changedText, changeTheme, themeVal }) => {
 			</button>
 
 			<div
+				ref={copyRef}
 				id="popup-notification"
 				className="popup-window popup-div rounded"
 			>

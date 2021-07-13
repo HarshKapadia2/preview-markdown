@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import marked from "marked";
 import DOMPurify from "dompurify";
 import Input from "./Input";
@@ -20,11 +20,11 @@ const TextArea = () => {
 	const [text, setText] = useState(initialText);
 	const [html, setHtml] = useState();
 	const [theme, setTheme] = useState("light");
+	const copyRef = useRef();
 
 	useEffect(() => {
 		const rawHtml = marked(text);
 		const sanitizedHtml = DOMPurify.sanitize(rawHtml);
-
 		setHtml(sanitizedHtml);
 	}, [text]);
 
@@ -40,6 +40,7 @@ const TextArea = () => {
 	return (
 		<main>
 			<Input
+				copyRef={copyRef}
 				initialValue={text}
 				changedText={changeText}
 				changeTheme={changeTheme}
