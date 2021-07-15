@@ -42,7 +42,7 @@ jobs:
                       BRANCH_NAME="pull-request-${BRANCH_NAME}";
                   fi
 
-                  git fetch --depth 2 "${GITHUB_REF}:${BRANCH_NAME}";
+                  git fetch origin "${GITHUB_REF}:${BRANCH_NAME}" --depth 1;
                   git switch "$BRANCH_NAME";
 
                   # Switch to gh-pages if on main
