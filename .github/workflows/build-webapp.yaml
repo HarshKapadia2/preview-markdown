@@ -34,19 +34,20 @@ jobs:
 
                   # Fetch and checkout code
                   BRANCH_NAME="branch";
-                  if [[ $GITHUB_REF == "refs/heads/*" ]]; then
-                      BRANCH_NAME="${GITHUB_REF#refs/heads/}";
-                  elif [[ $GITHUB_REF == "pull/*/head" ]]; then
-                      BRANCH_NAME="${GITHUB_REF#pull/}";
-                      BRANCH_NAME="${GITHUB_REF%/head}";
-                      BRANCH_NAME="pull-request-${BRANCH_NAME}";
-                  fi
+                  case "$GITHUB_REF" in
+                      /refs/heads/*)
+                          BRANCH_NAME="${GITHUB_REF#/refs/heads/}";;
+                      /pull/*/head)
+                          BRANCH_NAME="${GITHUB_REF#/pull/}";
+                          BRANCH_NAME="${GITHUB_REF%/head}";
+                          BRANCH_NAME="pull-request-${BRANCH_NAME}";
+                  esac
 
                   git fetch origin "${GITHUB_REF}:${BRANCH_NAME}" --depth 1;
                   git switch "$BRANCH_NAME";
 
                   # Switch to gh-pages if on main
-                  if [ "${BRANCH_NAME}" == "main" ]; then
+                  if [ "$BRANCH_NAME" = "main" ]; then
                       # Try to fetch gh-pages branch
                       if ! git fetch origin gh-pages; then
                           # If the branch doesn't exist, then create an orphan branch
@@ -59,10 +60,10 @@ jobs:
                       fi
                       
                       # Delete all old files
-                      rm -rf *
+                      rm -rf ./*
 
                       # Get latest source and buildscript
-                      git restore -s "${BRANCH_NAME}" public src .env.production package-lock.json package.json
+                      git restore -s "$BRANCH_NAME" public src .env.production package-lock.json package.json
                   fi
 
             - name: Build web app
