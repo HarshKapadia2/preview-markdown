@@ -28,8 +28,6 @@ jobs:
         steps:
             - name: Checkout code
               run: |
-                  env
-
                   # Setup repository
                   git init .
                   git remote add origin "${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}.git"
@@ -37,10 +35,10 @@ jobs:
                   # Fetch and checkout code
                   BRANCH_NAME="branch";
                   case "$GITHUB_REF" in
-                      /refs/heads/*)
-                          BRANCH_NAME="${GITHUB_REF#/refs/heads/}";;
-                      /pull/*/head)
-                          BRANCH_NAME="${GITHUB_REF#/pull/}";
+                      refs/heads/*)
+                          BRANCH_NAME="${GITHUB_REF#refs/heads/}";;
+                      pull/*/head)
+                          BRANCH_NAME="${GITHUB_REF#pull/}";
                           BRANCH_NAME="${GITHUB_REF%/head}";
                           BRANCH_NAME="pull-request-${BRANCH_NAME}";
                   esac
