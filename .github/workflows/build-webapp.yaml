@@ -28,23 +28,33 @@ jobs:
         steps:
             - name: Checkout code
               run: |
-                  # Set repository Url
-                  REPOSITORY_URL="${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}.git"
-                  BRANCH_NAME="${GITHUB_REF#refs/heads/}"
+                  # Setup repository
+                  git init .
+                  git remote add origin "${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}.git"
 
-                  # Clone repository
-                  git clone --depth 2 -b "${BRANCH_NAME}" --no-single-branch "${REPOSITORY_URL}" .
+                  # Fetch and checkout code
+                  BRANCH_NAME="branch";
+                  if [[ $GITHUB_REF == "refs/heads/*" ]]; then
+                      BRANCH_NAME="${GITHUB_REF#refs/heads/}";
+                  elif [[ $GITHUB_REF == "pull/*/head" ]]; then
+                      BRANCH_NAME="${GITHUB_REF#pull/}";
+                      BRANCH_NAME="${GITHUB_REF%/head}";
+                      BRANCH_NAME="pull-request-${BRANCH_NAME}";
+                  fi
 
-                  # Don't switch to gh-pages if not on main
+                  git fetch --depth 2 "${GITHUB_REF}:${BRANCH_NAME}";
+                  git switch "$BRANCH_NAME";
+
+                  # Switch to gh-pages if on main
                   if [ "${BRANCH_NAME}" == "main" ]; then
-                      # Switch to gh-pages branch
-                      if ! git show-branch remotes/origin/gh-pages; then
+                      # Try to fetch gh-pages branch
+                      if ! git fetch origin gh-pages; then
                           # If the branch doesn't exist, then create an orphan branch
                           echo "Could not find gh-pages branch, creating as orphan"
                           git switch --orphan gh-pages
                       else
                           # Else, switch to the branch
-                          echo "Creating gh-pages branch as an orphan branch"
+                          echo "Switching to gh-pages branch"
                           git switch gh-pages
                       fi
                       
