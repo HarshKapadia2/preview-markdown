@@ -131,13 +131,13 @@
 }
 
 #output kbd {
-	background-color: white;
+	background-color: #fafbfc;
 	margin: 0 0.2em;
 	padding: 0.1em 0.5em;
 
-	border: 1px solid #e0e3e6;
-	border-radius: 3px;
-	box-shadow: 0 2px 0 #e0e3e6;
+	border: 1px solid #d1d5da;
+	border-radius: 6px;
+	box-shadow: 0 2px 0 #d1d5da;
 
 	line-height: 2;
 	white-space: nowrap;
@@ -195,9 +195,9 @@
 }
 
 #output.dark kbd {
-	background-color: black;
-	border-color: #3a424a;
-	box-shadow: 0 2px 0 #3a424a;
+	background-color: #0d1117;
+	border-color: #d1d5da;
+	box-shadow: 0 2px 0 #d1d5da;
 }
 
 /* ================================================ SCROLL BAR (for 'pre' and 'table') =================================================== */
