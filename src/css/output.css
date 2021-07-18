@@ -130,6 +130,17 @@
 	margin: 1em 0;
 }
 
+#output kbd {
+	background-color: #f6f8fa;
+	margin: 0 0.2em;
+	padding: 0.1em 0.5em;
+	border: 1px solid #dadfe3;
+	border-radius: 6px;
+	box-shadow: 0 2px 0 #dadfe3;
+	line-height: 2;
+	white-space: nowrap;
+}
+
 /* ============================================= DARK THEME ====================================================== */
 
 #output.dark {
@@ -179,6 +190,12 @@
 #output.dark hr {
 	border-color: #30363d;
 	background-color: #30363d;
+}
+
+#output.dark kbd {
+	background-color: #161b22;
+	border-color: #393f48;
+	box-shadow: 0 2px 0 #393f48;
 }
 
 /* ================================================ SCROLL BAR (for 'pre' and 'table') =================================================== */

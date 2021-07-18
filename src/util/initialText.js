@@ -226,6 +226,13 @@ This text is center aligned!
 - Usual **Markdown** works in \`here\`.
 </details>
 
+
+#### Keyboard Tag
+
+The keyboard tag (\`<kbd></kbd>\`) can be used to represent a keyboard input.
+
+Eg: <kbd>Ctrl</kbd> + <kbd>C</kbd>
+
 ## Resources
 
 - [What is Markdown?](https://www.markdownguide.org/getting-started)
