@@ -20,7 +20,6 @@ const TextArea = () => {
 	const [text, setText] = useState(initialText);
 	const [html, setHtml] = useState();
 	const [theme, setTheme] = useState("light");
-	const copyRef = useRef();
 
 	useEffect(() => {
 		const rawHtml = marked(text);
@@ -41,7 +40,6 @@ const TextArea = () => {
 	return (
 		<main>
 			<Input
-				copyRef={copyRef}
 				initialValue={text}
 				changedText={changeText}
 				changeTheme={changeTheme}

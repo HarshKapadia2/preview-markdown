@@ -1,10 +1,13 @@
+import { useState, useEffect, useRef } from "react";
 import "../css/input.css";
 import copy from "../img/copy.svg";
 import cross from "../img/cross.svg";
 import moon from "../img/moon.svg";
 import sun from "../img/sun.svg";
 
-const Input = ({ initialValue, changedText, changeTheme, themeVal, copyRef }) => {
+const Input = ({ initialValue, changedText, changeTheme, themeVal }) => {
+	const copyRef = useRef();
+
 	const textChangeAction = () => {
 		const clearBtn = document.querySelector("#clear-btn");
 		const copyBtn = document.querySelector("#copy-btn");

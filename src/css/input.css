@@ -30,6 +30,11 @@
 	right: 4em;
 }
 
+.popup-window {
+	position: absolute;
+	border: transparent;
+}
+
 #popup-notification {
 	top: 0.2em;
 	right: 1.4em;

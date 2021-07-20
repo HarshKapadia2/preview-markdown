@@ -18,11 +18,6 @@ main > div {
 	cursor: pointer;
 }
 
-.popup-window {
-	position: absolute;
-	border: transparent;
-}
-
 .action-btn img {
 	display: grid;
 	place-content: center;
