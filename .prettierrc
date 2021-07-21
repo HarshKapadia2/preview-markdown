@@ -14,7 +14,7 @@
     "pluginSearchDirs": [],
     "printWidth": 80,
     "proseWrap": "preserve",
-    "quoteProps": "as-needed",
+    "quoteProps": "preserve",
     "rangeEnd": -1,
     "rangeStart": 0,
     "requirePragma": false,
