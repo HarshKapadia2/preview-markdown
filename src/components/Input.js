@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import "../css/input.css";
 import copy from "../img/copy.svg";
 import cross from "../img/cross.svg";
@@ -5,6 +6,8 @@ import moon from "../img/moon.svg";
 import sun from "../img/sun.svg";
 
 const Input = ({ initialValue, changedText, changeTheme, themeVal }) => {
+	const copyRef = useRef();
+
 	const textChangeAction = () => {
 		const clearBtn = document.querySelector("#clear-btn");
 		const copyBtn = document.querySelector("#copy-btn");
@@ -28,6 +31,19 @@ const Input = ({ initialValue, changedText, changeTheme, themeVal }) => {
 		textArea.setSelectionRange(0, textArea.value.length); // Fallback for mobile
 
 		document.execCommand("copy");
+	};
+
+	const copyPopUp = () => {
+		copyRef.current.style.display = "block";
+
+		setTimeout(function () {
+			copyRef.current.style.display = "none";
+		}, 2000);
+	};
+
+	const copyActions = () => {
+		copyText();
+		copyPopUp();
 	};
 
 	const clearText = () => {
@@ -59,11 +75,19 @@ const Input = ({ initialValue, changedText, changeTheme, themeVal }) => {
 				<img src={cross} alt="Clear text" />
 			</button>
 
+			<div
+				ref={copyRef}
+				id="popup-notification"
+				className="popup-window popup-div rounded"
+			>
+				<small>Copied!</small>
+			</div>
+
 			<button
 				id="copy-btn"
 				className="action-btn"
 				title="Copy text"
-				onClick={copyText}
+				onClick={copyActions}
 			>
 				<img src={copy} alt="Copy text" />
 			</button>
