@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useRef } from "react";
 import "../css/input.css";
 import copy from "../img/copy.svg";
 import cross from "../img/cross.svg";

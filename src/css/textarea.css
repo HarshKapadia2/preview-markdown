@@ -27,6 +27,7 @@ main > div {
 	main {
 		flex-direction: column;
 	}
+
 	main > div {
 		width: 100vw;
 	}
