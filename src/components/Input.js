@@ -5,30 +5,30 @@ import cross from "../img/cross.svg";
 import moon from "../img/moon.svg";
 import sun from "../img/sun.svg";
 
-const Input = ({ initialValue, changedText, changeTheme, themeVal }) => {
+const Input = ({ inputValue, changedText, changeTheme, themeVal }) => {
+	const textAreaRef = useRef();
 	const copyRef = useRef();
+	const copyBtnRef = useRef();
+	const clearBtnRef = useRef();
 
 	const textChangeAction = () => {
-		const clearBtn = document.querySelector("#clear-btn");
-		const copyBtn = document.querySelector("#copy-btn");
-		const newText = document.querySelector("#input").value;
+		changedText(textAreaRef.current.value);
 
-		changedText(newText);
-
-		if (newText === "") {
-			clearBtn.style.display = "none";
-			copyBtn.style.display = "none";
+		if (textAreaRef.current.value === "") {
+			copyBtnRef.current.style.display = "none";
+			clearBtnRef.current.style.display = "none";
 		} else {
-			clearBtn.style.display = "block";
-			copyBtn.style.display = "block";
+			copyBtnRef.current.style.display = "block";
+			clearBtnRef.current.style.display = "block";
 		}
 	};
 
 	const copyText = () => {
-		const textArea = document.querySelector("#input");
-
-		textArea.select();
-		textArea.setSelectionRange(0, textArea.value.length); // Fallback for mobile
+		textAreaRef.current.select();
+		textAreaRef.current.setSelectionRange(
+			0,
+			textAreaRef.current.value.length
+		); // Fallback for mobile
 
 		document.execCommand("copy");
 	};
@@ -36,7 +36,7 @@ const Input = ({ initialValue, changedText, changeTheme, themeVal }) => {
 	const copyPopUp = () => {
 		copyRef.current.style.display = "block";
 
-		setTimeout(function () {
+		setTimeout(() => {
 			copyRef.current.style.display = "none";
 		}, 2000);
 	};
@@ -47,9 +47,7 @@ const Input = ({ initialValue, changedText, changeTheme, themeVal }) => {
 	};
 
 	const clearText = () => {
-		const textArea = document.querySelector("#input");
-
-		textArea.value = "";
+		textAreaRef.current.value = "";
 		textChangeAction();
 	};
 
@@ -60,14 +58,16 @@ const Input = ({ initialValue, changedText, changeTheme, themeVal }) => {
 			<textarea
 				title="Input"
 				id="input"
+				ref={textAreaRef}
 				className={themeVal === "light" ? "" : "dark"}
-				defaultValue={initialValue}
+				value={inputValue}
 				onChange={textChangeAction}
 				placeholder="## Enter some text!"
 			></textarea>
 
 			<button
 				id="clear-btn"
+				ref={clearBtnRef}
 				className="action-btn"
 				title="Clear text"
 				onClick={clearText}
@@ -76,8 +76,8 @@ const Input = ({ initialValue, changedText, changeTheme, themeVal }) => {
 			</button>
 
 			<div
-				ref={copyRef}
 				id="popup-notification"
+				ref={copyRef}
 				className="popup-window popup-div rounded"
 			>
 				<small>Copied!</small>
@@ -85,6 +85,7 @@ const Input = ({ initialValue, changedText, changeTheme, themeVal }) => {
 
 			<button
 				id="copy-btn"
+				ref={copyBtnRef}
 				className="action-btn"
 				title="Copy text"
 				onClick={copyActions}

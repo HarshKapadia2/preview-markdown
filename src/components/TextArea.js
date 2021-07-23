@@ -40,7 +40,7 @@ const TextArea = () => {
 	return (
 		<main>
 			<Input
-				initialValue={text}
+				inputValue={text}
 				changedText={changeText}
 				changeTheme={changeTheme}
 				themeVal={theme}
