@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import marked from "marked";
+import { marked } from "marked";
 import DOMPurify from "dompurify";
 import Input from "./Input";
 import Output from "./Output";
