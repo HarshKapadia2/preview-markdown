@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/preview-markdown/static/css/main.7de9f47a.chunk.css",
-    "main.js": "/preview-markdown/static/js/main.1db2f1ca.chunk.js",
+    "main.js": "/preview-markdown/static/js/main.b3d2ac89.chunk.js",
     "runtime-main.js": "/preview-markdown/static/js/runtime-main.65300175.js",
-    "static/js/2.ea08cfe5.chunk.js": "/preview-markdown/static/js/2.ea08cfe5.chunk.js",
+    "static/js/2.8216fafd.chunk.js": "/preview-markdown/static/js/2.8216fafd.chunk.js",
     "index.html": "/preview-markdown/index.html",
-    "static/js/2.ea08cfe5.chunk.js.LICENSE.txt": "/preview-markdown/static/js/2.ea08cfe5.chunk.js.LICENSE.txt",
+    "static/js/2.8216fafd.chunk.js.LICENSE.txt": "/preview-markdown/static/js/2.8216fafd.chunk.js.LICENSE.txt",
     "static/media/index.css": "/preview-markdown/static/media/Segoe UI.293e692f.woff",
     "static/media/copy.22dcafbd.svg": "/preview-markdown/static/media/copy.22dcafbd.svg",
     "static/media/cross.213a98b1.svg": "/preview-markdown/static/media/cross.213a98b1.svg",
@@ -14,8 +14,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.65300175.js",
-    "static/js/2.ea08cfe5.chunk.js",
+    "static/js/2.8216fafd.chunk.js",
     "static/css/main.7de9f47a.chunk.css",
-    "static/js/main.1db2f1ca.chunk.js"
+    "static/js/main.b3d2ac89.chunk.js"
   ]
 }
